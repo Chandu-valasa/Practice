@@ -1,0 +1,10 @@
+a=23
+b=12
+x=a+b
+y=a-b
+z=a*b
+w=a/b
+u=a//b
+v=a%b
+t=a**b
+print(x,y,z,w,u,v,t)
