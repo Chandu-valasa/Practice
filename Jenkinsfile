@@ -9,8 +9,8 @@ pipeline {
         }
         stage('build') {
             steps {
-                python {
-                    samplr.py
+                script {
+                    sh 'python3 simplr.py'
                     }
                 // Add your test commands here
             }
