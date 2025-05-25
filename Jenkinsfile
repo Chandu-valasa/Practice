@@ -10,6 +10,7 @@ pipeline {
         stage('build') {
             steps {
                 script {
+                    sh 'ls -ltr'
                     sh 'python3 simplr.py'
                     }
                 // Add your test commands here
