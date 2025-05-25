@@ -12,8 +12,8 @@ pipeline {
                 script {
                     sh '''
                     ls -ltr
-                    chmod +x simplr.py
-                    python3 simplr.py'''
+                    chmod +x samplr.py
+                    python3 samplr.py'''
                     }
                 // Add your test commands here
             }
