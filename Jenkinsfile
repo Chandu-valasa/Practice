@@ -1,4 +1,4 @@
-pipeline{
+pipeline {
     agent any
     stages {
         stage('checkout') {
@@ -9,7 +9,7 @@ pipeline{
         }
         stage('build') {
             steps {
-                pyhton 'samplr.py'
+                python 'samplr.py'
                 // Add your test commands here
             }
         }
