@@ -1,0 +1,17 @@
+pipelineJob("execute python script"){
+     parameters {
+        booleanParam('FLAG', true)
+        choiceParam('OPTION', ['option 1 (default)', 'option 2', 'option 3'])
+    }
+    logRotator {
+
+        daysToKeep(30)// If specified, only up to this number of build records are kept.
+        numToKeep(100)
+}
+     definition {
+        cps {
+            script(readFileFromWorkspace('https://github.com/Chandu-valasa/Practice.git/Jenkinsfile'))
+            sandbox(true)
+        }
+    }
+}
